@@ -41,7 +41,7 @@
                         <a class="nav-link" href="#aboutMe">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Experience</a>
+                        <a class="nav-link" href="#experience">Experience</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">My Past Projects</a>
@@ -64,7 +64,7 @@
                 Hi! My name is Justin Melore. I'm a coding student living in Arizona that specializes in object-oriented programming.
                 I've always been interested in computers, but it was back in 2019 when I first started delving into coding. Since then
                 I'm
-                now attending a <a href="https://west-mec.edu/" target="_blank">CTE school</a> continuing to expand my programming
+                now attending a <a href="https://west-mec.edu/" target="_blank" class="westmec">CTE school</a> continuing to expand my programming
                 knowledge.
                 <br><br>I have an interest in video games and storytelling, which has helped drive my passion for programming. In the
                 future, I intend to pursue a degree in computer science and work as a game developer.
@@ -74,7 +74,54 @@
         </section>
 
         <!-- Experience Section -->
-        <section></section>
+        <section class="container-fluid" id="experience">
+            <h1>My Experience</h1>
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel" data-slide-to="1"></li>
+                    <li data-target="#carousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <h3>Programming Knowledge</h3>
+                        <p>I started learning to code in 2019. I am more than capable of designing when I
+                            need to, but
+                            I specialize in Object Oriented coding languages. I particularly enjoy working with Javascript, though I'm hoping to
+                            continuously expand
+                            my repetoir with more languages!<br><br><br>
+                            <span>Languages I Know:</span> <span class="languages">HTML</span>, <span class="languages">CSS</span>,
+                            <span class="languages">Javascript</span>, <span class="languages">Java</span>
+                        </p>
+                    </div>
+                    <div class="carousel-item">
+                        <h3>Education</h3>
+                        <p>
+                            I'm currently in high school and additionally attending a seperate CTE school in order to pursue coding further. I
+                            have 4.67 GPA and I plan to graduate in 2023, and after high school, I hope to pursue a bachelor's degree in
+                            computer science.
+                        </p>
+                    </div>
+                    <div class="carousel-item">
+                        <h3>Work Experience</h3>
+                        <p>
+                            As of now, I have not had any formal work experience at a full-time job. However, I have been doing volunteer work
+                            since
+                            2018. I've worked with various organizations over the years to help give back to the community.<br><br><br>
+                            If you'd like to see a full list, you can view my <a>resume</a> above for more details.
+                        </p>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
 
         <!-- Past Projects -->
         <section></section>

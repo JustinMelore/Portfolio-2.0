@@ -5,6 +5,5 @@ $(document).ready(function() {
         $(this).off("mouseenter",revealSection);
     }
 
-    $("#aboutMe").on("mouseenter",revealSection);
-    $("#experience").on("mouseenter",revealSection);
+    $("section").on("mouseenter",revealSection);
 })

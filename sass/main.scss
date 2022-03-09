@@ -127,6 +127,7 @@ section {
   align-items: center;
   height: auto;
   padding-top: 20rem;
+  font-family: Acme;
 
   //Section for the About Me part
   &#aboutMe {
@@ -175,7 +176,6 @@ section {
       opacity: 0;
       color: white;
       font-weight: bold;
-      font-family: Acme;
       transform: translateX(-50%);
     }
 
@@ -202,7 +202,6 @@ section {
     transition: 1s;
     background-color: green;
     padding-bottom: 50%;
-    font-family: Acme;
 
     ol {
       transform: translateY(1rem);
@@ -272,5 +271,10 @@ section {
         font-size: calc(1vw + 1vh);
       }
     }
+  }
+
+  &#projects {
+    transition: 1s;
+    background-color: darkturquoise;
   }
 }

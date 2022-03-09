@@ -374,7 +374,7 @@ section {
     transition: 1s;
     background-color: darkturquoise;
     position: relative;
-    height: 250vh;
+    height: 300vh;
     padding-top: 0;
 
     #tie {
@@ -428,11 +428,15 @@ section {
       color: orange;
       text-shadow: 2px 2px black;
       transition: 1s;
-      height: 100vh;
+      height: 200vh;
+
+      div {
+        height: 75%;
+      }
 
       iframe {
         width: 75%;
-        height: 75%;
+        height: 50%;
       }
     }
 

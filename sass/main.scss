@@ -3,6 +3,7 @@
   src: url('../fonts/Acme-Regular.ttf');
 }
 
+//General page styling
 html {
   max-width: 100%;
   scroll-behavior: smooth;
@@ -17,8 +18,10 @@ body {
   background-size: cover;
   background-attachment: fixed;
   max-width: 100%;
+  overflow-x: hidden;
 }
 
+// Styling for West-MEC links
 .westmec {
   color: orange;
   text-shadow: 2px 2px black;
@@ -198,6 +201,7 @@ section {
     }
   }
 
+  //Section for the experience/skills part
   &#experience {
     transition: 1s;
     background-color: green;
@@ -273,6 +277,7 @@ section {
     }
   }
 
+  //Section for the past projects part
   &#projects {
     transition: 1s;
     background-color: black;
@@ -353,7 +358,6 @@ section {
 
     &.revealed {
       background-color: darkturquoise;
-      box-shadow: inset 0px 0px 20px 0.5vw lightblue;
       i,
       p,
       h1,
@@ -361,6 +365,90 @@ section {
       div {
         opacity: 1;
         transform: none;
+      }
+    }
+  }
+
+  // Section for the resume part
+  &#resume {
+    transition: 1s;
+    background-color: darkturquoise;
+    position: relative;
+    height: 250vh;
+    padding-top: 0;
+
+    #tie {
+      transform: translateY(-50%) scaleY(0);
+      transition: 1s;
+      div {
+        margin: 0;
+        left: 50%;
+        &:nth-child(1) {
+          background-color: crimson;
+          width: calc(7vw + 7vh);
+          height: calc(7vw + 7vh);
+          border-radius: 100%;
+          transform: translateX(55%) translateY(20%);
+        }
+        &:nth-child(2) {
+          border-bottom: calc(20vw + 20vh) solid crimson;
+          border-left: calc(5vw + 5vh) solid transparent;
+          border-right: calc(5vw + 5vh) solid transparent;
+          height: 0;
+          width: calc(15vw + 15vh);
+        }
+        &:nth-child(3) {
+          width: 0;
+          height: 0;
+          border-left: calc(7.5vw + 7.5vh) solid transparent;
+          border-right: calc(7.5vw + 7.5vh) solid transparent;
+          border-bottom: 100px solid crimson;
+          transform: rotateZ(180deg) translateY(1%);
+        }
+      }
+    }
+    h1 {
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      transform: translateX(-50%) scaleX(0);
+      font-size: calc(5vw + 5vh);
+      color: orange;
+      text-shadow: 5px 5px black;
+      transition: 1s;
+    }
+
+    .container {
+      text-align: center;
+      font-size: calc(1.5vw + 1.5vh);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-75%) scaleX(0);
+      color: orange;
+      text-shadow: 2px 2px black;
+      transition: 1s;
+      height: 100vh;
+
+      iframe {
+        width: 75%;
+        height: 75%;
+      }
+    }
+
+    &.revealed {
+      background-color: #dddddd;
+
+      #tie {
+        transform: translateY(-50%);
+      }
+
+      h1 {
+        transform: translateX(-50%);
+      }
+
+      .container {
+        transform: translateX(-50%);
       }
     }
   }

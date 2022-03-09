@@ -17,6 +17,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   max-width: 100%;
+  overflow-x: hidden;
 }
 
 .westmec {
@@ -346,7 +347,6 @@ section#projects .card:hover {
 
 section#projects.revealed {
   background-color: darkturquoise;
-  box-shadow: inset 0px 0px 20px 0.5vw lightblue;
 }
 
 section#projects.revealed i,
@@ -356,5 +356,93 @@ section#projects.revealed h2,
 section#projects.revealed div {
   opacity: 1;
   transform: none;
+}
+
+section#resume {
+  transition: 1s;
+  background-color: darkturquoise;
+  position: relative;
+  height: 250vh;
+  padding-top: 0;
+}
+
+section#resume #tie {
+  transform: translateY(-50%) scaleY(0);
+  transition: 1s;
+}
+
+section#resume #tie div {
+  margin: 0;
+  left: 50%;
+}
+
+section#resume #tie div:nth-child(1) {
+  background-color: crimson;
+  width: calc(7vw + 7vh);
+  height: calc(7vw + 7vh);
+  border-radius: 100%;
+  transform: translateX(55%) translateY(20%);
+}
+
+section#resume #tie div:nth-child(2) {
+  border-bottom: calc(20vw + 20vh) solid crimson;
+  border-left: calc(5vw + 5vh) solid transparent;
+  border-right: calc(5vw + 5vh) solid transparent;
+  height: 0;
+  width: calc(15vw + 15vh);
+}
+
+section#resume #tie div:nth-child(3) {
+  width: 0;
+  height: 0;
+  border-left: calc(7.5vw + 7.5vh) solid transparent;
+  border-right: calc(7.5vw + 7.5vh) solid transparent;
+  border-bottom: 100px solid crimson;
+  transform: rotateZ(180deg) translateY(1%);
+}
+
+section#resume h1 {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  font-size: calc(5vw + 5vh);
+  color: orange;
+  text-shadow: 5px 5px black;
+  transition: 1s;
+}
+
+section#resume .container {
+  text-align: center;
+  font-size: calc(1.5vw + 1.5vh);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-75%) scaleX(0);
+  color: orange;
+  text-shadow: 2px 2px black;
+  transition: 1s;
+  height: 100vh;
+}
+
+section#resume .container iframe {
+  width: 75%;
+  height: 75%;
+}
+
+section#resume.revealed {
+  background-color: #dddddd;
+}
+
+section#resume.revealed #tie {
+  transform: translateY(-50%);
+}
+
+section#resume.revealed h1 {
+  transform: translateX(-50%);
+}
+
+section#resume.revealed .container {
+  transform: translateX(-50%);
 }
 /*# sourceMappingURL=main.css.map */

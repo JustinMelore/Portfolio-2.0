@@ -120,7 +120,7 @@ section {
   justify-content: center;
   align-items: center;
   height: auto;
-  padding-top: 20rem;
+  padding-top: 10rem;
   font-family: Acme;
 }
 
@@ -267,6 +267,94 @@ section#experience #carousel p {
 
 section#projects {
   transition: 1s;
+  background-color: black;
+  padding-bottom: 10vh;
+}
+
+section#projects i,
+section#projects p,
+section#projects h1,
+section#projects h2,
+section#projects div {
+  opacity: 0;
+  transition: 1s;
+  transform: rotateZ(-25deg);
+}
+
+section#projects i {
+  font-size: calc(5vw + 5vh);
+}
+
+section#projects h1 {
+  font-size: calc(3vw + 3vh);
+  color: darkblue;
+  text-shadow: 3px 3px black;
+}
+
+section#projects p {
+  color: darkblue;
+  text-align: center;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: calc(1.5vw + 1.5vh);
+}
+
+section#projects p img {
+  width: calc(1.5vw + 1.5vh);
+}
+
+section#projects h2 {
+  color: darkblue;
+  font-size: calc(2vw + 2vh);
+  position: relative;
+  text-decoration: underline;
+  text-shadow: 2px 2px black;
+  width: 100%;
+  background-color: #152424;
+  text-align: center;
+  border-radius: 2rem;
+  border: 0.5vw inset darkblue;
+}
+
+section#projects .card {
+  background-color: #152424;
+  border-radius: 1rem;
+  transition: 0.25s;
+}
+
+section#projects .card img {
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom: 0.5vh solid blue;
+}
+
+section#projects .card h5 {
+  font-size: calc(1.75vw + 1.75vh);
+  color: blue;
+  font-style: italic;
+}
+
+section#projects .card p {
+  font-size: calc(1vw + 1vh);
+  text-align: left;
+}
+
+section#projects .card:hover {
+  filter: brightness(1.25);
+}
+
+section#projects.revealed {
   background-color: darkturquoise;
+  box-shadow: inset 0px 0px 20px 0.5vw lightblue;
+}
+
+section#projects.revealed i,
+section#projects.revealed p,
+section#projects.revealed h1,
+section#projects.revealed h2,
+section#projects.revealed div {
+  opacity: 1;
+  transform: none;
 }
 /*# sourceMappingURL=main.css.map */

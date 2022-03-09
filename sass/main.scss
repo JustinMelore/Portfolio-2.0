@@ -202,6 +202,7 @@ section {
     transition: 1s;
     background-color: green;
     padding-bottom: 50%;
+    font-family: Acme;
 
     ol {
       transform: translateY(1rem);
@@ -214,7 +215,8 @@ section {
     }
 
     h1 {
-      margin-bottom: 5vh;
+      padding-bottom: 5vh;
+      font-size: calc(2.5vw + 2.5vh);
     }
 
     h1,
@@ -222,6 +224,31 @@ section {
     p {
       color: lightblue;
       text-shadow: 0px 0px 10px white, 0px 0px 30px blue, 0px 0px 50px black;
+    }
+
+    h3 {
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      border: calc(0.25vw + 0.25vh) solid lightblue;
+      box-shadow: 0px 0px 10px white, 0px 0px 30px blue, 0px 0px 50px black;
+      border-radius: 2rem;
+    }
+
+    #languages {
+      border: calc(0.25vw + 0.25vh) solid lightgreen;
+      color: lightgreen;
+      padding: 1vw;
+      text-shadow: 0px 0px 10px white, 0px 0px 30px green, 0px 0px 50px black;
+      box-shadow: 0px 0px 10px white, 0px 0px 30px green, 0px 0px 50px black;
+      border-radius: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 50%;
+      font-size: calc(1vw + 1vh);
+      margin-left: auto;
+      margin-right: auto;
     }
 
     &.revealed {
@@ -242,6 +269,7 @@ section {
         width: 75%;
         margin-left: auto;
         margin-right: auto;
+        font-size: calc(1vw + 1vh);
       }
     }
   }

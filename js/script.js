@@ -8,13 +8,18 @@ $(document).ready(function() {
     function reveal(){
       for(let i = 1; i < $("section").length; i++){
         let $section = $("section").eq(i);
-        if($section.offset().top-300<= $(window).scrollTop()){
+        if($section.offset().top - $("section").eq(i-1).height()/4 <= $(window).scrollTop()){
           $section.addClass("revealed");
         }
       }
       if($(".revealed").length === 5) {
         $(window).off("scroll",reveal);
       }
+    }
+
+    if($(window).height() < 992) {
+        $("section").addClass("revealed");
+        $(window).off("scroll", reveal);
     }
 
 })

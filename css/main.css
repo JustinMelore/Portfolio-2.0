@@ -311,7 +311,7 @@ section#resume {
   transition: 1s;
   background-color: darkturquoise;
   position: relative;
-  height: 300vh;
+  height: calc(100vw + 100vh);
   padding-top: 0;
 }
 section#resume #tie {
@@ -373,8 +373,8 @@ section#resume .container iframe {
   width: 75%;
   height: 50%;
 }
-section#resume .container .d-lg-block img {
-  width: 25%;
+section#resume .container .d-lg-inline img {
+  width: 50%;
 }
 section#resume.revealed {
   background-color: #dddddd;

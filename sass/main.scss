@@ -428,7 +428,7 @@ section {
       color: orange;
       text-shadow: 2px 2px black;
       transition: 1s;
-      height: 200vh;
+      height: calc(50vh + 50vw);
 
       .d-xl-block {
         height: 75%;
@@ -459,6 +459,66 @@ section {
 
       .container {
         transform: translateX(-50%);
+      }
+    }
+  }
+
+  // Section for the contact me part
+  &#contactMe {
+    background-color: #dddddd;
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 0;
+    color: blue;
+
+    h1 {
+      margin-top: 5vh;
+      font-size: calc(3vw + 3vh);
+      text-shadow: 4px 4px black;
+      transition: 1s;
+      opacity: 0;
+      transform: translateY(5%);
+    }
+
+    img {
+      width: 10vw;
+      transition: transform 0.25s, opacity 1s, filter 0.25s;
+      opacity: 0;
+
+      &:hover {
+        filter: invert(1);
+        transform: translateY(-15%);
+      }
+    }
+
+    p {
+      text-shadow: 2px 2px black;
+      font-size: calc(1.75vw + 1.75vh);
+      text-align: center;
+      width: 75%;
+      transition: 1s;
+      opacity: 0;
+      transform: translateY(5%);
+    }
+
+    &.revealed {
+      background-color: orange;
+
+      h1 {
+        opacity: 1;
+        transform: none;
+      }
+
+      p {
+        opacity: 1;
+        transform: none;
+      }
+
+      img {
+        opacity: 1;
       }
     }
   }

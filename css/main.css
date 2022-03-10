@@ -366,12 +366,15 @@ section#resume .container {
   transition: 1s;
   height: 200vh;
 }
-section#resume .container div {
+section#resume .container .d-xl-block {
   height: 75%;
 }
 section#resume .container iframe {
   width: 75%;
   height: 50%;
+}
+section#resume .container .d-lg-block img {
+  width: 25%;
 }
 section#resume.revealed {
   background-color: #dddddd;

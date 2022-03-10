@@ -430,13 +430,19 @@ section {
       transition: 1s;
       height: 200vh;
 
-      div {
+      .d-xl-block {
         height: 75%;
       }
 
       iframe {
         width: 75%;
         height: 50%;
+      }
+
+      .d-lg-block {
+        img {
+          width: 25%;
+        }
       }
     }
 

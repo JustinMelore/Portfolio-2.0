@@ -19,7 +19,7 @@ $(document).ready(function() {
 
     //Checks to see if the site is being displayed on a mobile device, in which case all of the site's section will be revealed
     console.log($(window).width());
-    if($(window).width() < 992) {
+    if($(document).width() < 992) {
         $("section").addClass("revealed");
         $(window).off("scroll", reveal);
         //Removes all on hover effects for mobile and makes their changes default

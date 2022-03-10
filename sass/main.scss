@@ -477,7 +477,7 @@ section {
     h1 {
       margin-top: 5vh;
       font-size: calc(3vw + 3vh);
-      text-shadow: 4px 4px black;
+      text-shadow: calc(0.2vw + 0.2vh) calc(0.2vw + 0.2vh) black;
       transition: 1s;
       opacity: 0;
       transform: translateY(5%);

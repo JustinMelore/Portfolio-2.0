@@ -25,7 +25,7 @@ body {
   text-shadow: 2px 2px black;
 }
 
-.westmec:hover {
+.westmec.mobile, .westmec:hover {
   color: orange;
   filter: brightness(0.9);
 }
@@ -76,26 +76,26 @@ nav li {
   transition: all 0.25s;
 }
 
-nav:hover {
+nav.mobile, nav:hover {
   box-shadow: 0px 10px 0px green;
   border-color: green;
 }
 
-nav:hover div:first-of-type {
+nav.mobile div:first-of-type, nav:hover div:first-of-type {
   border-color: green;
   box-shadow: 2px 2px black;
   text-shadow: 2px 2px black;
 }
 
-nav:hover div:first-of-type img {
+nav.mobile div:first-of-type img, nav:hover div:first-of-type img {
   filter: none;
 }
 
-nav:hover li {
+nav.mobile li, nav:hover li {
   margin-left: 2vw;
 }
 
-nav:hover p {
+nav.mobile p, nav:hover p {
   color: green;
 }
 
@@ -109,7 +109,7 @@ nav a {
   font-weight: bold;
 }
 
-nav a:hover {
+nav a.mobile, nav a:hover {
   filter: brightness(125%);
   border-right: 0.25rem solid green;
   border-radius: 1rem;
@@ -341,7 +341,7 @@ section#projects .card p {
   text-align: left;
 }
 
-section#projects .card:hover {
+section#projects .card.mobile, section#projects .card:hover {
   filter: brightness(1.25);
 }
 
@@ -480,7 +480,7 @@ section#contactMe img {
   opacity: 0;
 }
 
-section#contactMe img:hover {
+section#contactMe img.mobile, section#contactMe img:hover {
   filter: invert(1);
   transform: translateY(-15%);
 }

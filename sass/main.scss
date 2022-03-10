@@ -484,7 +484,7 @@ section {
     }
 
     img {
-      width: 10vw;
+      width: calc(10vw + 10vh);
       transition: transform 0.25s, opacity 1s, filter 0.25s;
       opacity: 0;
 
